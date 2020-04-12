@@ -14,7 +14,7 @@ const MainComponent = (props: Props) => {
 	const pathName = location.pathname.slice(1);
 	// @ts-ignore
 	const section = Section[pathName];
-	const { name, items, def } = section;
+	const { name, items, kb, def } = section;
 	const backToHome = () => {
 		history.push('/');
 	};
@@ -28,6 +28,7 @@ const MainComponent = (props: Props) => {
 				<span
 					className={`subLink ${linkIdx === idx ? 'activeLink' : ''}`}
 					onClick={() => setLinkIdx(idx)}
+					key={idx}
 				>
 					{item}
 				</span>
@@ -39,6 +40,15 @@ const MainComponent = (props: Props) => {
 			<button className="backHome" onClick={backToHome}>
 				Back To Home
 			</button>
+			<div className="subKb">
+				{kb && kb.length ? (
+					<ul>
+						{kb.map((rule, index) => (
+							<li key={index}>{rule}</li>
+						))}
+					</ul>
+				) : null}
+			</div>
 			<h1>{name}</h1>
 			<div className="subCompLink">{renderItems(items)}</div>
 			<div className="subComp">

@@ -2,11 +2,27 @@ export const Section = {
 	ustate: {
 		name: 'useState',
 		items: ['With Prev State', 'With Object', 'With Array'],
+		kb: [
+			'Only Call Hooks at the Top Level (not inside loops, conditions or nested functions)',
+			'Only call Hooks from React Functions (not just any regular functions)'
+		],
 		def: true
 	},
 	ueffect: {
 		name: 'useEffect',
-		items: ['After Render', 'Only Once', 'Cleanup', 'Incorrect Dependency'],
+		items: [
+			'Conditionally',
+			'OnlyOnce-Class',
+			'OnlyOnce-Hook',
+			'Cleanup',
+			'Incorrect-Dependency-Class',
+			'Inc-Dep-Hook'
+		],
+		kb: [
+			'The Effect Hook lets you perform side effects in functional components',
+			'It is a close replacement for componentDidMount, componentDidUpdate, componentWillUnmount',
+			'Use Multiple Effects to Separate Concerns'
+		],
 		def: true
 	},
 	ueffectdata: {
@@ -36,7 +52,7 @@ export const Section = {
 	},
 	uothers: {
 		name: 'The Others',
-		items: ['useRef', 'useRef Dom', 'useCallback', 'useMemo' ],
+		items: ['useRef', 'useRef Dom', 'useCallback', 'useMemo'],
 		def: true
 	},
 	ucustom: {

@@ -46,11 +46,11 @@ li {
 	padding: 1% 2%;
 	background: #fff;
 	min-height: 200px;
-	max-height: 220px;
+	max-height: 250px;
 	box-sizing: border-box;
 }
 .section {
-	height: 75vh;
+	height: 80vh;
 	align-items: center;
 }
 /*Styles */
@@ -94,7 +94,7 @@ li {
 	display: block;
 	text-align: center;
 	width: 90vh;
-	height: 50vh;
+	height: 40vh;
 	background: #fff;
 	border: 5px #aabbaa solid;
 	margin: auto;
