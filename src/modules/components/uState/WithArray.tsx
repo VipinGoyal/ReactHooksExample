@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 
+interface IState {
+  id: number;
+  value: number;
+}
+
 const WithArray = () => {
-	const [items, setItems] = useState([]);
+	const [items, setItems] = useState<IState[]>([]);
 	const addItem = () => {
 		setItems([
 			...items,
