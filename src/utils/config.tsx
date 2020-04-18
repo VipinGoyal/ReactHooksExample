@@ -37,20 +37,29 @@ export const Section = {
 		items: ['WithConext Consumer', 'WithContext Hook'],
 		kb: [
 			'Context provides a way to pass data through the component tree Without having to pass props down manually to every level',
+			'useful in case of certain types of props (e.g. locale preference, UI theme)',
 			'useContext makes it simpler to consume context, Creating Context and providing Context remains same'
 		]
 	},
 	ureducer: {
 		name: 'useReducer',
-		items: ['Simple State & Action', 'Complex State & Action', 'Multiple']
+		items: ['Simple State & Action', 'Complex State & Action', 'Multiple'],
+		kb: [
+			'Used for state management',
+			'Alternative to useState',
+			'useReducer vs useState'
+		]
 	},
 	ureducermore: {
 		name: 'useReducer More',
 		items: [
 			'With useContext',
-			'Fetching Data 1',
-			'Fetching Data 2',
+			'Fetching Data With useState',
+			'Fetching Data With useReducer',
 			'vs useState'
+		],
+		kb: [
+			'useReducer for local state management but combine with useContext for global state management'
 		]
 	},
 	uothers: {

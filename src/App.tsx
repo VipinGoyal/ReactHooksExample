@@ -23,6 +23,7 @@ const App = () => {
 				<Route exact path="/" component={HomePage} />
 			</Router>
 			<h3>Happy Web Wednesday {new Date().toLocaleDateString()}</h3>
+			<h4>Vipin DOT Goyal AT Chegg DOT com</h4>
 		</div>
 	);
 };
