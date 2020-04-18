@@ -4,6 +4,7 @@ const IntervalCounterHook = () => {
 	const [count, setCount] = useState(0);
 
 	const tick = () => {
+		console.log('tick here');
 		setCount(count + 1);
 	};
 

@@ -14,7 +14,7 @@ const MainComponent = (props: Props) => {
 	const pathName = location.pathname.slice(1);
 	// @ts-ignore
 	const section = Section[pathName];
-	const { name, items, kb, def } = section;
+	const { name, items, kb } = section;
 	const backToHome = () => {
 		history.push('/');
 	};
@@ -23,12 +23,11 @@ const MainComponent = (props: Props) => {
 
 	const renderItems = items => {
 		return items.map((item: string, index: number) => {
-			const idx = def ? index + 1 : index;
 			return (
 				<span
-					className={`subLink ${linkIdx === idx ? 'activeLink' : ''}`}
-					onClick={() => setLinkIdx(idx)}
-					key={idx}
+					className={`subLink ${linkIdx === index ? 'activeLink' : ''}`}
+					onClick={() => setLinkIdx(index)}
+					key={index}
 				>
 					{item}
 				</span>

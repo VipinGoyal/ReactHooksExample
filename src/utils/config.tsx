@@ -1,44 +1,48 @@
 export const Section = {
 	ustate: {
 		name: 'useState',
-		items: ['With Prev State', 'With Object', 'With Array'],
+		items: ['With Class', 'With Prev State', 'With Object', 'With Array'],
 		kb: [
 			'Only Call Hooks at the Top Level (not inside loops, conditions or nested functions)',
 			'Only call Hooks from React Functions (not just any regular functions)'
-		],
-		def: true
+		]
 	},
 	ueffect: {
 		name: 'useEffect',
 		items: [
+			'With Class',
 			'Conditionally',
 			'OnlyOnce-Class',
 			'OnlyOnce-Hook',
-			'Cleanup',
-			'Incorrect-Dependency-Class',
-			'Inc-Dep-Hook'
+			'Cleanup'
 		],
 		kb: [
 			'The Effect Hook lets you perform side effects in functional components',
 			'It is a close replacement for componentDidMount, componentDidUpdate, componentWillUnmount',
 			'Use Multiple Effects to Separate Concerns'
-		],
-		def: true
+		]
 	},
-	ueffectdata: {
-		name: 'Fetching Data with UseEffect',
-		items: ['Example 1', 'Example 2', 'Example 3'],
-		def: true
+	ueffectmore: {
+		name: 'UseEffect More',
+		items: [
+			'Incorrect-Dependency-Class',
+			'Inc-Dep-Hook',
+			'Fetching Data',
+			'Fetching Data 1',
+			'Fetching Data 2'
+		]
 	},
 	ucontext: {
 		name: 'useContext',
-		items: ['Example 1', 'Example 2', 'Example 3'],
-		def: true
+		items: ['WithConext Consumer', 'WithContext Hook'],
+		kb: [
+			'Context provides a way to pass data through the component tree Without having to pass props down manually to every level',
+			'useContext makes it simpler to consume context, Creating Context and providing Context remains same'
+		]
 	},
 	ureducer: {
 		name: 'useReducer',
-		items: ['Simple State & Action', 'Complex State & Action', 'Multiple'],
-		def: true
+		items: ['Simple State & Action', 'Complex State & Action', 'Multiple']
 	},
 	ureducermore: {
 		name: 'useReducer More',
@@ -47,17 +51,14 @@ export const Section = {
 			'Fetching Data 1',
 			'Fetching Data 2',
 			'vs useState'
-		],
-		def: true
+		]
 	},
 	uothers: {
 		name: 'The Others',
-		items: ['useRef', 'useRef Dom', 'useCallback', 'useMemo'],
-		def: true
+		items: ['useRef', 'useRef Dom', 'useCallback', 'useMemo']
 	},
 	ucustom: {
 		name: 'Custom Hooks',
-		items: ['useDocumentTitle', 'useCounter', 'useInput'],
-		def: false
+		items: ['useDocumentTitle', 'useCounter', 'useInput']
 	}
 };
