@@ -27,21 +27,17 @@ export const HomePage = (props: Props) => {
 					</li>
 				))}
 			</ul>
-			<p>
-				<span>Reference Links : </span>
-				<ul>
-					https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
-				</ul>
-				<ul>
-					https://kentcdodds.com/blog/how-to-use-react-context-effectively
-				</ul>
-				<ul>
-					https://kentcdodds.com/blog/how-to-implement-usestate-with-usereducer
-				</ul>
-				<ul>
-					https://stackoverflow.com/questions/57005663/when-to-use-useimperativehandle-uselayouteffect-and-usedebugvalue
-				</ul>
-			</p>
+			<span>Reference Links : </span>
+			<ul>
+				https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
+			</ul>
+			<ul>https://kentcdodds.com/blog/how-to-use-react-context-effectively</ul>
+			<ul>
+				https://kentcdodds.com/blog/how-to-implement-usestate-with-usereducer
+			</ul>
+			<ul>
+				https://stackoverflow.com/questions/57005663/when-to-use-useimperativehandle-uselayouteffect-and-usedebugvalue
+			</ul>
 		</>
 	);
 };
