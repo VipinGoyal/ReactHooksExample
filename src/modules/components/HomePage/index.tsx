@@ -38,6 +38,9 @@ export const HomePage = (props: Props) => {
 				<ul>
 					https://kentcdodds.com/blog/how-to-implement-usestate-with-usereducer
 				</ul>
+				<ul>
+					https://stackoverflow.com/questions/57005663/when-to-use-useimperativehandle-uselayouteffect-and-usedebugvalue
+				</ul>
 			</p>
 		</>
 	);

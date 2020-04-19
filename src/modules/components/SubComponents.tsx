@@ -32,6 +32,18 @@ import WithUseContext from './uReducerMore/WithUseContext';
 import DataFetchingWuState from './uReducerMore/DataFetchingWuState';
 import DataFetchingWuReducer from './uReducerMore/DataFetchingWuReducer';
 
+/* The Others */
+import UseRefClass from './uOthers/UseRefClass';
+import UseRefHook from './uOthers/UseRefHook';
+import UseRefDom from './uOthers/UseRefDom';
+import UseCallback from './uOthers/UseCallback';
+import UseMemo from './uOthers/UseMemo';
+
+/* Custom Hook*/
+import UseCounter from './uCustom/UseCounter';
+import UseDocumentTitle from './uCustom/UseDocumentTitle';
+import UserForm from './uCustom/UserForm';
+
 export const SubComponents = {
 	ustate: [CounterClassUs, WithPrevState, WithObject, WithArray],
 	ueffect: [
@@ -51,6 +63,6 @@ export const SubComponents = {
 	ucontext: [WithContextConsumer, WithContextHook],
 	ureducer: [SimpleStateAction, ComplexStateAction, MultipleuseReducers],
 	ureducermore: [WithUseContext, DataFetchingWuState, DataFetchingWuReducer],
-	uothers: [],
-	ucustom: []
+	uothers: [UseRefClass, UseRefHook, UseRefDom, UseCallback, UseMemo],
+	ucustom: [UseDocumentTitle, UseCounter, UserForm]
 };

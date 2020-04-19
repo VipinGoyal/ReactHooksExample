@@ -55,8 +55,7 @@ export const Section = {
 		items: [
 			'With useContext',
 			'Fetching Data With useState',
-			'Fetching Data With useReducer',
-			'vs useState'
+			'Fetching Data With useReducer'
 		],
 		kb: [
 			'useReducer for local state management but combine with useContext for global state management'
@@ -64,10 +63,33 @@ export const Section = {
 	},
 	uothers: {
 		name: 'The Others',
-		items: ['useRef', 'useRef Dom', 'useCallback', 'useMemo']
+		items: [
+			'useRef Class',
+			'useRef Hook',
+			'useRef Dom',
+			'useCallback',
+			'useMemo'
+		],
+		kb: [
+			'UseRef can be used as generic container to hold immutable value similar to  instance property on class component',
+			'its value doesnt change when component re-render, also this doesnt cause re-render when its value change',
+			'React.memo is higher order component, prevent functional component to re-render if its props / state dont changed not related to hook memo',
+			'useCallback is a hook that will return a memoized version of the callback function that only changes if one of the dependencies has changed',
+			'It is useful when passing callbacks to optimized child components that rely on reference quality to prevent unnecessary renders',
+			'useMemo is a hook that will only recompute, that cache value when one of the dependency has changed so to avoid expensive calculations on every render ',
+			'useCallBack caches the provided function instance itslef whereas useMemo invokes function and cache its result',
+			'useCallback will be used to cache function and useMemo is used to cache invoked function result'
+		]
 	},
 	ucustom: {
 		name: 'Custom Hooks',
-		items: ['useDocumentTitle', 'useCounter', 'useInput']
+		items: ['useDocumentTitle', 'useCounter', 'useInput'],
+		kb: [
+			'By extracting component logic in reusable functions to create custom hook',
+			'js function whose name starts with "use"',
+			'custom hook can call other hooks if required',
+			'share logic - Alternative to HOCs and Render props',
+			
+		]
 	}
 };
