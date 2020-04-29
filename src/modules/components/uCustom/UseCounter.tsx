@@ -3,7 +3,9 @@ import React, { useState } from 'react';
 
 const UseCounter = () => {
 	// const [count, increment, decrement, reset] = useCounter(0, 1);
+	// const [count, increment, decrement, reset] = useCounter(5, 5);
 
+	/**ToComment Start*/
 	const [count, setCount] = useState(0);
 
 	const increment = () => {
@@ -17,6 +19,7 @@ const UseCounter = () => {
 	const reset = () => {
 		setCount(0);
 	};
+	/**ToComment End*/
 
 	return (
 		<div>

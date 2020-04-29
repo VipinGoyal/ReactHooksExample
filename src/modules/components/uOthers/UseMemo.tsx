@@ -16,7 +16,7 @@ const UseMemo = () => {
 		// let i = 0;
 		// while (i < 2000000000) i++;
 		return counterOne % 2 === 0;
-	}
+	};
 
 	// const isEven = useMemo(() => {
 	// 	let i = 0;

@@ -4,10 +4,13 @@ import React, { useState, useEffect } from 'react';
 const UseDocumentTitle = () => {
 	const [count, setCount] = useState(0);
 	// useDocumentTitle(count);
+
+	/**ToComment Start*/
 	useEffect(() => {
 		document.title = `Count ${count}`;
 	}, [count]);
-
+	/**ToComment Start*/
+	
 	return (
 		<div>
 			<button onClick={() => setCount(count + 1)}>Count - {count}</button>

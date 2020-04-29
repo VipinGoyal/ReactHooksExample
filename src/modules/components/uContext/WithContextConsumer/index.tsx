@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {createContext} from 'react';
 import ComponentA from './ComponentA';
 
-export const EmployeeContext = React.createContext('');
-export const CompanyContext = React.createContext('');
+export const EmployeeContext = createContext('');
+export const CompanyContext = createContext('');
 
 const WithContextHook = () => {
 	return (

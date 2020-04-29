@@ -30,6 +30,12 @@ export const Section = {
 			'Fetching Data',
 			'Fetching Data 1',
 			'Fetching Data 2'
+		],
+		kb: [
+			`If we think Dependecy array is a way to specify when you want to re-run the effect, you're going to run into problems`,
+			'Dependecy array should be thought of as a way to let react know about everything that effect must watch for changes',
+			'we can have multiple useEffect to group related logic',
+			'useEffect helps us in grouping related code together unlike in class'
 		]
 	},
 	ucontext: {
@@ -45,9 +51,10 @@ export const Section = {
 		name: 'useReducer',
 		items: ['Simple State & Action', 'Complex State & Action', 'Multiple'],
 		kb: [
-			'Used for state management',
-			'Alternative to useState',
-			'useReducer vs useState'
+			'Alternative to useState, Used for state management',
+			'array.reduce(reducer, initialValue)  VS  useReducer(reducer, initialValue)',
+			'singleValue = reducer(accumulator, itemValue) VS newState = reducer(currentState, action)',
+			'reduce method returns a single value VS useReducer returns pair of values [newState, dispatch]'
 		]
 	},
 	ureducermore: {
@@ -81,15 +88,18 @@ export const Section = {
 			'useCallback will be used to cache function and useMemo is used to cache invoked function result'
 		]
 	},
+	// uothersmore: {
+	// 	name: 'The Others More',
+	// 	items: ['Blinky Render', 'useLayoutEffect']
+	// },
 	ucustom: {
 		name: 'Custom Hooks',
-		items: ['useDocumentTitle', 'useCounter', 'useInput'],
+		items: ['useDocumentTitle', 'useCounter', 'useInput', 'useCurrentSize'],
 		kb: [
 			'By extracting component logic in reusable functions to create custom hook',
 			'js function whose name starts with "use"',
 			'custom hook can call other hooks if required',
-			'share logic - Alternative to HOCs and Render props',
-			
+			'share logic - Alternative to HOCs and Render props'
 		]
 	}
 };

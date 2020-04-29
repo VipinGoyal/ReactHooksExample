@@ -31,9 +31,11 @@ const DataFetchingWuReducer = () => {
 
 	useEffect(() => {
 		axios
-			.get(`https://jsonplaceholder.typicode.com/posts/1`)
+			// .get(`https://jsonplaceholder.typicode.com/posts/1`)
+			.get(`https://reqres.in/api/users/1`)
 			.then(response => {
-				dispatch({ type: 'FETCH_SUCCESS', payload: response.data });
+				// dispatch({ type: 'FETCH_SUCCESS', payload: response.data });
+				dispatch({ type: 'FETCH_SUCCESS', payload: response.data.data });
 			})
 			.catch(error => {
 				dispatch({ type: 'FETCH_ERROR' });
@@ -41,7 +43,8 @@ const DataFetchingWuReducer = () => {
 	}, []);
 	return (
 		<div>
-			{state.loading ? 'Loading' : state.post.title}
+			{/* {state.loading ? 'Loading' : state.post.title} */}
+			{state.loading ? 'Loading' : state.post.email}
 			{state.error ? state.error : null}
 		</div>
 	);

@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 const WithPrevState = () => {
 	const initialCount = 0;
 	const [count, setCount] = useState(initialCount);
+
 	const incrementFive = () => {
 		for (let i = 0; i < 5; i++) {
 			setCount(prevCount => prevCount + 1);

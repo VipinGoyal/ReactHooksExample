@@ -4,15 +4,15 @@ const CounterHook = () => {
 	const [count, setCount] = useState(0);
 	const [name, setName] = useState('');
 
-	useEffect(() => {
-		console.log('useEffect - Updating document title ');
-		document.title = `You clicked ${count} times`;
-	});
-
 	// useEffect(() => {
 	// 	console.log('useEffect - Updating document title ');
 	// 	document.title = `You clicked ${count} times`;
-	// }, [count]);
+	// });
+
+	useEffect(() => {
+		console.log('useEffect - Updating document title ');
+		document.title = `You clicked ${count} times`;
+	}, [count]);
 
 	return (
 		<div>

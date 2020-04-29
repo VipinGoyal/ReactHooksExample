@@ -3,16 +3,17 @@ import { CountContext } from './';
 
 const ComponentA = () => {
 	const countContext = useContext(CountContext);
+	const {countState, countDispatch} = countContext;
 	return (
 		<div>
-			Component A {countContext.countState}
-			<button onClick={() => countContext.countDispatch('increment')}>
+			Component A {countState}
+			<button onClick={() => countDispatch('increment')}>
 				Increment
 			</button>
-			<button onClick={() => countContext.countDispatch('decrement')}>
+			<button onClick={() => countDispatch('decrement')}>
 				Decrement
 			</button>
-			<button onClick={() => countContext.countDispatch('reset')}>Reset</button>
+			<button onClick={() => countDispatch('reset')}>Reset</button>
 		</div>
 	);
 };

@@ -6,10 +6,13 @@ const DataFetching = () => {
 
 	useEffect(() => {
 		axios
-			.get(`https://jsonplaceholder.typicode.com/posts`)
+			// .get(`https://jsonplaceholder.typicode.com/posts`)
+			.get(`https://reqres.in/api/users`)
 			.then(res => {
-				console.log(res);
-				setPosts(res.data);
+				// console.log(res);
+				// setPosts(res.data);
+				console.log(res.data.data);
+				setPosts(res.data.data);
 			})
 			.catch(err => {
 				console.log(err);
@@ -21,7 +24,8 @@ const DataFetching = () => {
 		<div>
 			<ul>
 				{posts.map(post => (
-					<li key={post.id}>{post.title}</li>
+					// <li key={post.id}>{post.name}</li>
+					<li key={post.id}>{post.email}</li>
 				))}
 			</ul>
 		</div>

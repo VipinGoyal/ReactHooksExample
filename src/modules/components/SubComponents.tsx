@@ -39,16 +39,21 @@ import UseRefDom from './uOthers/UseRefDom';
 import UseCallback from './uOthers/UseCallback';
 import UseMemo from './uOthers/UseMemo';
 
+/* The Others More */
+import BlinkyRender from './uOthersMore/BlinkyRender';
+import UseLayoutEffect from './uOthersMore/UseLayoutEffect';
+
 /* Custom Hook*/
 import UseCounter from './uCustom/UseCounter';
 import UseDocumentTitle from './uCustom/UseDocumentTitle';
 import UserForm from './uCustom/UserForm';
+import UseCurrentSize from './uCustom/UseCurrentSize';
 
 export const SubComponents = {
 	ustate: [CounterClassUs, WithPrevState, WithObject, WithArray],
 	ueffect: [
 		CounterClassUe,
-		CounterHook,
+CounterHook,
 		MouseClass,
 		MouseHook,
 		MouseHookContainer
@@ -64,5 +69,6 @@ export const SubComponents = {
 	ureducer: [SimpleStateAction, ComplexStateAction, MultipleuseReducers],
 	ureducermore: [WithUseContext, DataFetchingWuState, DataFetchingWuReducer],
 	uothers: [UseRefClass, UseRefHook, UseRefDom, UseCallback, UseMemo],
-	ucustom: [UseDocumentTitle, UseCounter, UserForm]
+	uothersmore: [BlinkyRender, UseLayoutEffect],
+	ucustom: [UseDocumentTitle, UseCounter, UserForm, UseCurrentSize]
 };

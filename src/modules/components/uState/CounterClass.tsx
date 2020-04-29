@@ -38,7 +38,7 @@ class CounterClass extends Component<{}, State> {
 	};
 
 	incrementFiveN = () => {
-		for (let i = 0; i < 5; i++) {
+		for (let i = 0; i < 20; i++) {
 			this.setState({ count: this.state.count + 1 });
 		}
 	};

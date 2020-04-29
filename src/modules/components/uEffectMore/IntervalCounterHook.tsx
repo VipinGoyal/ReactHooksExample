@@ -4,13 +4,18 @@ const IntervalCounterHook = () => {
 	const [count, setCount] = useState(0);
 
 	const tick = () => {
-		console.log('tick here');
-		setCount(count + 1);
+		setCount(prevCount=>{
+			console.log('tick here', prevCount);
+			return prevCount + 1;
+		});
+		// console.log('tick here', count);
 	};
 
 	useEffect(() => {
 		const interval = setInterval(tick, 1000);
+		console.log("VIpin here use");
 		return () => {
+			console.log("VIpin here unmount");
 			clearInterval(interval);
 		};
 	}, []);

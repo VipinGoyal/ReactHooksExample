@@ -7,21 +7,25 @@ const DataFetching = () => {
 
 	useEffect(() => {
 		axios
-			.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
+			// .get(`https://jsonplaceholder.typicode.com/posts/${id}`)
+			.get(`https://reqres.in/api/users/${id}`)
 			.then(res => {
-				console.log(res);
-				setPost(res.data);
+				// console.log(res);
+				// setPost(res.data);
+				console.log(res.data.data);
+				setPost(res.data.data);
 			})
 			.catch(err => {
 				console.log(err);
 			});
-	}, []);
-	// }, [id]);
+	// }, []);
+	}, [id]);
 
 	return (
 		<div>
 			<input type="text" value={id} onChange={e => setId(e.target.value)} />
-			<div>{post.title}</div>
+			{/* <div>{post.title}</div> */}
+			<div>{post.email}</div>
 		</div>
 	);
 };
